@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<body>
+		<style>
+		form{
+			margin: auto;
+			width:400px;
+			height: 700px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid #CCC;
+			border-radius:30px;
+		}
+		#div66{
+			padding-left: 190px;
+			padding-right: 5px;
+		}
+		/* label {
+			
+			
+			text-align: right;
+		}
+		fieldset{
+			
+			padding-left: 130px;
+			padding-right: 10px;
+			text-align: right;
+		}
+		
+			.button{
+				padding-left: 90px;
+			}
+			button{
+				margin-left: 5em;
+			} */
+		
+		</style>
+		
+		
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" href="payment-form.css"> -->
+		<title>支付表单</title>
+		<form  >
+		
+			<h1>支付表单</h1>
+			<p>必填字段 *.</p>
+			<h2>
+				联系人信息
+			</h2>
+		<div id="div66">
+			
+		
+				<fieldset  style=" padding-left: 20px;   ">
+				<legend >标题</legend>
+				<!-- <label style="text-align: end;display: inline-block;width: 90px;"> -->
+				
+				<input type="radio" name="sex"  >先生<br>
+				
+				<input type="radio" name="sex">女士<br>
+				
+				</fieldset></div>
+	
+	<p align="right">姓名：*
+			<input type="text" name="username" id="" value=""  />
+		</p>
+		<p align="right">E-mail：*
+			<input type="text" name="username" id="" value=""  />
+		</p>
+		<p align="right">密码：*
+			<input type="password" name="pwd" id="" value=""  />
+		</p>
+		
+	<section>
+		<h2>
+			支付信息
+		</h2>
+		<p align="center">&emsp;&emsp;&emsp;&emsp;卡类型:
+		<select name="card">
+			<!-- <option value ="">选择</option> -->
+			<option value ="1">Visa</option>
+			<option value ="2">Google Pay</option>
+			<option value ="3">Paypal</option>
+		</select>
+			<p align="right">卡号：*
+				<input type="text" name="username" id="" value="" />
+			</p>
+			<p align="right">卡有效日期：*<input type="text"  />
+			<p></p>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>输入格式 月/年</i>
+		</p>
+		
+	</section>
+	</head>
+	<center><input type="submit" name="s1" value="确定支付" width= 4px></center>
+	<from action="https://www.bilibili.com" method="post"></from>
+	</form>
+	
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<style >
+	
+		#div1{
+			width: 400px;
+			height: 700px;
+			border: 1px solid grey;
+			border-radius: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			
+		}
+		#div2{
+			text-align: right;
+		}
+		#div3{
+			padding-left: 130px;
+			padding-right: 10px;
+		}
+		
+		
+		</style>
+		</head>
+		<body>
+		<div id="div1">
+		<h1>支付表单</h1>
+		必填字段 *.<input type="hidden" /><br />
+
+				<h2>
+					联系人信息
+				</h2>
+				
+			<div id="div3">
+			<form >
+				<fieldset style="border: 1px solid rgb(121,106,106);">
+		
+					<legend >标题</legend>
+				
+			
+					<input type="radio" name="sex" value="先生">先生<br><br>
+					
+				
+					<input type="radio" name="sex" value="女士">女士<br>
+			
+			</fieldset>
+			</form>	
+			</div>
+			<div id="div2">
+				<br />
+			
+			姓名：*
+				<input type="text" style="width: 251px;"  /><br / ><br />
+			
+			E-mail：*
+				<input type="text"  style="width: 251px;" /><br /><br />
+		
+			密码：*
+				<input type="password" style="width: 251px;"  /><br /><br />
+			</div>
+	
+			<h2>支付信息</h2>
+				
+				&emsp;&emsp;&emsp;&emsp;&ensp;卡类型:
+				<select>
+					<!-- <option value ="">选择</option> -->
+					<option >Visa</option>
+					<option >Google Pay</option>
+					<option >Paypal</option>
+				</select><br />
+				<div id="div2">
+					卡号：*
+						<input type="text" style="width: 250px;" /><br />
+					
+					卡有效日期：*<input type="data" style="width: 250px;"  /><br />
+				
+						&emsp;&emsp;&emsp;&ensp;&emsp;<em>输入格式 月/年</em>
+				<center><button>确定支付</button></center>
+		</div>
+		
+
+	</body>
+</html>

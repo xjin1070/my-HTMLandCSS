@@ -1,0 +1,37 @@
+
+form{
+	margin:0 auto;
+	width:200px;
+	padding: lem;
+	border: 1px solid #CCC;
+	border-radius:lem;
+}
+form div + div {
+	margin-top: lem;
+}
+label {
+	display:inline-block;
+	width: 90px;
+	text-align: right;
+}
+input,textarea{
+	font:l em sans-serif;
+	width: 300px;
+	box-sizing: border-box;
+	border:1px solid #999;
+	}
+	input : focus,textarea : focus {
+		border-color: #000;
+	}
+	textarea{
+		vertical-align: top;
+		height:5em;
+		
+	}
+	button{
+		padding-left: 90px;
+	}
+	button{
+		margin-left: 5em;
+	}
+

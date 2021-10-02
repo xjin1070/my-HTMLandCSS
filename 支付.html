@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>js第二次作业</title>
+    <style>
+        #div1 {
+            width: 400px;
+            height: 700px;
+            border: 1px solid grey;
+            border-radius: 30px;
+            /*圆角*/
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            /*边距20px*/
+        }
+        #div2 {
+
+            text-align: right;
+            /*右对齐*/
+        }
+        #div3 {
+            padding-left: 130px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--div1：外边框-->
+    <div id="div1">
+
+        <h1><a style="font-family: 宋体;">支付表单</a></h1><br>
+        必填字段: *<input type="hidden"><br />
+        <h2>联系人信息</h2>
+
+        <!--第一个form-->
+        <div id="div3">
+            <form>
+                <fieldset style="border:1px solid rgb(121, 106, 106)">
+                    <legend>标题</legend>
+                    <input type="radio" name="r1" />先生<br />
+                    <input type="radio" name="r1" />女士<br />
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="div2">
+            <br />
+            姓名：* <input type="text" style="width:250px;" /><br /><br />
+            E-mail: * <input type="text" style="width:250px;" /><br /><br />
+            密码：* <input type="password" style="width:250px;" /><br /><br />
+        </div>
+        <h2>支付信息</h2>
+
+        &emsp;&emsp;&emsp;&emsp;卡类型：<select>
+            <option>Visa</option>
+            <option>ID Card</option>
+            <option>其他</option>
+        </select><br /><br />
+
+        <div id="div2">
+            卡号：* <input type="text" style="width:250px;" /><br /><br />
+            卡有效日期：* <input type="data" style="width:250px;" /><br />
+        </div>
+        &emsp;&emsp;<em>输入格式：月/年</em><br /><br />
+        <center><button>确认支付</button></center>
+
+    </div>
+
+</body>
+
+</html>
