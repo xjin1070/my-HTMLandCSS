@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+	 label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 25px;
+            text-align: right;
+            width: 175px;
+            vertical-align: top;
+        }
+
+        input{
+           
+			text-align: left;
+        }
+		
+	.div1{
+		text-align: left;
+	 
+           float: left;
+           
+            }
+	.div2{
+           text-align: left;
+		   
+		    width: 3px;
+           
+     }
+</style>
+
+</head>
+
+<body >
+<script language="javascript" src="youxiang.js">  
+ </script>
+<img src="youxian.png"   width="900px"><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;新用户申请（带*为必填选项）<br>
+
+<span class="div1"><label >用户名</label><input  type="text"  name="t1" >*</span>
+<span class="div2"><label for="">真实姓名</label> <input type="text"   name="t1">*</span><p>
+
+<span class="div1"><label for="">密码</label><input type="password"  name="t1"  id="a1">*</span>
+<span class="div2"><label for="">性别</label><input type="radio" name="xingbie">男&emsp;&emsp;&emsp;<input type="radio" name="xinebie">女</span><p>
+
+<span class="div1"><label for="">确认密码</label><input type="password"  name="t1"  id="a2">*  </span>
+<span class="div2"><label for="">省/市</label>
+<select name="" id=""><option value="1">长沙</option>
+					  <option value="2">岳阳</option>
+					  <option value="3">衡阳</option>
+</select></span><p>
+
+<span class="div1"><label for="">验证码</label><input type="text"></span>  
+<span class="div2"><label for="">地址</label>&ensp;<input type="text"></span><p>
+
+<span class="div1"><label for="">密码提示问题</label><input type="text"   name="t1">*</span>  <span class="div2"><label for="">邮政编码</label><input type="text"></span><p>
+
+<span class="div1"><label for="">问题的答案</label><input type="text"  name="t1">* </span>
+<span class="div2"><label for="">生日</label><input type="text" width="100">年
+<select name="" id=""><option value="1">10</option></select>月
+<select name="" id=""><option value="1">16</option></select>日</span><p>
+
+<span class="div1"><label for="">电子邮箱</label><input type="text"  name="mazey" id="mazey" ></span> <span class="div2"><label for="">身份证号码</label>&ensp;<input type="text"  id="txtIDNUMBER"></span><p>
+
+<span class="div1"><label for="">手机号码</label><input type="text" id="txtMobile"></span> <span class="div2"><label for="">联系电话</label>&ensp;<input type="text"></span><p>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input  type="button"  value="提交"  onclick="check();password();Email();phonenumber()">
+&emsp;&emsp;&emsp;&emsp;&emsp;
+<input  type="reset"  value="重置">
+
+</body>
+</html>
