@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			#table1{
+				margin: 50px auto;
+				width: 602px;
+			}
+			.title1{
+				background-color: #CCCCCC;
+			}
+			div{
+				width: 600px;
+				height: 50px;
+			margin: -51px auto;
+			border: 1px solid;
+			display:  flex;
+			justify-content: center;
+			align-items: center;
+			}
+			.b3{
+				width: 100px;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="table1"  border="1"  cellspacing="0" cellpadding="14">
+			<tr class="title1"><th>商品名称</th>
+								<th>数量</th>
+								<th>价格</th>
+								
+								<th>操作</th>
+			</tr>
+			<tr class="title2"><th>休闲运动鞋</th>
+								<th>5</th>
+								<th>$48</th>
+								<th><input id="b2" type="button" name="" value="删除" >
+								<input id="b1" type="button" name="" value="修改" ></th>
+			
+			</tr>
+		</table>
+		<div class="box">
+			<input class="b3" type="button" name="" id="" value="添加订单" />
+		</div>
+		<script type="text/javascript">
+			window.onload=function(){
+				var b1=document.getElementsByClassName("b1")[0];
+				var b2=document.getElementsByClassName("b2")[0];
+				var b3=document.getElementsByClassName("b3")[0];
+				var title1=document.getElementsByClassName("title1")[0];
+				var title2=document.getElementsByClassName("title2");
+				var table1=document.getElementById("table1");
+				var tr=document.getElementsByTagName("tr");
+				var m=0;
+				b3.onclick=function(){
+					var otr=document.createElement("tr");
+					var th1=document.createElement("th");
+					var th2=document.createElement("th");
+					var th3=document.createElement("th");
+					var th4=document.createElement("th");
+					var n=0;
+					otr.appendChild(th1);
+					otr.appendChild(th2);
+					otr.appendChild(th3);
+					otr.appendChild(th4);
+				table1.appendChild(otr);
+				th1.innerHTML="烤肉串";
+				th2.innerHTML="20";
+				th3.innerHTML="$9.99";
+				th4.innerHTML="<input type='button' value='删除' class='b5'>"+" "+"<input type='button' value='修改' class='b4'>";
+				var b4=document.getElementsByClassName("b4")[m];
+				var b5=document.getElementsByClassName("b5")[m++];
+				b5.onclick=function(){
+					otr.parentElement.removeChild(otr);
+					m--;
+				};
+				b4.onclick=function(){
+				if(n==0){
+					b4.value="确定";
+					n++;
+					th1.innerHTML="<input type='text' class='a1' value='"+th1.innerHTML+"'/>";
+					th2.innerHTML="<input type='text' class='a1' value='"+th2.innerHTML+"' />";
+					th3.innerHTML="<input type='text' class='a1' value='"+th3.innerHTML+"' />";
+				}	
+				else if(n==1){
+					var g=document.getElementsByClassName("a1");
+					var a=a1[0];
+					var b=a1[1];
+					var c=a1[2];
+					b4.value="修改";
+					n--;
+					th1.innerHTML=a.value;
+					th2.innerHTML=b.value;
+					th3.innerHTML=c.value;}
+				}
+				}
+				
+				}
+		</script>
+	</body>
+</html>
